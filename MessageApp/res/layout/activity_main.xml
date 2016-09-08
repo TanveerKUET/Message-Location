@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/trackapplogo"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="To" />
+<EditText
+        android:id="@+id/receiverEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10" >
+
+    </EditText>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lattitude" />
+
+<TextView
+    android:id="@+id/txtLatitude"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Longitude" />
+<TextView
+    android:id="@+id/txtLongitude"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="" />
+
+<TextView
+    android:id="@+id/txtAccuracy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Accuracy" />
+
+<TextView
+    android:id="@+id/txtProvider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Provider" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="16dp"
+        android:text="Your current location to be sent" />
+
+    <EditText
+        android:id="@+id/messageeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSendSms"
+        android:layout_width="171dp"
+        android:layout_height="71dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:text="Send" />
+
+</LinearLayout>
